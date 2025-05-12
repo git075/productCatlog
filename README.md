@@ -5,6 +5,18 @@ A **Spring Boot** based RESTful **Product Catalog API** with full CRUD support, 
 
 This project is designed with clean architecture, performance best practices, and production-readiness in mind — perfect for recruiters, internships, and interviews.
 
+## 🛡️ Secure Configuration with Spring Profiles
+
+This project uses **Spring Profiles** to manage environment-specific configuration:
+- `application.properties` → contains only: `spring.profiles.active=dev`
+- `application-dev.properties` → used for local/dev environment (includes H2 DB, Redis Cloud, etc.)
+- `application-prod.properties` → used for production setup (e.g., cloud DB, secure Redis, etc.)
+
+🚫 Sensitive files like `application-dev.properties` and `application-prod.properties` are **excluded** from version control using `.gitignore`.
+
+🔐 This approach follows **12-factor app principles** and is a best practice for secure configuration.
+
+
 ---
 
 ## ✅ Features
@@ -32,6 +44,7 @@ This project is designed with clean architecture, performance best practices, an
 - **Swagger (springdoc-openapi)**
 
 ---
+
 
 ## 🚀 How to Run the Backend
 
