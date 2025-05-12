@@ -1,0 +1,34 @@
+# Application Name
+spring.application.name=ProductCatlog
+
+# ===============================
+# 🔗 H2 In-Memory Database Config
+# ===============================
+spring.datasource.url=jdbc:h2:mem:productdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# ===============================
+# ⚙️ JPA / Hibernate
+# ===============================
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# ===============================
+# 🔐 H2 Console (for in-browser DB access)
+# ===============================
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+# ===============================
+# 🚀 Redis Cloud Integration
+# ===============================
+spring.redis.host=your-redis-host.redis.cache.amazonaws.com
+spring.redis.port=16242
+spring.redis.password=your-redis-password
+spring.redis.ssl.enabled=true
+
+# Enable Redis Caching
+spring.cache.type=redis
